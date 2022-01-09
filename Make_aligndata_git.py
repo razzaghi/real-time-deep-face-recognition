@@ -13,12 +13,12 @@ import detect_face
 import random
 from time import sleep
 
-output_dir_path = '/..Path to output folder../'
+output_dir_path = './output/'
 output_dir = os.path.expanduser(output_dir_path)
 if not os.path.exists(output_dir):
         os.makedirs(output_dir)
 
-datadir = '/..Path to human img data folder../'
+datadir = './data/'
 dataset = facenet.get_dataset(datadir)
 
 print('Creating networks and loading parameters')
